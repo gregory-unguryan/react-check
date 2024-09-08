@@ -15,14 +15,20 @@ function UserProfile() {
 					</Avatar>
 				</div>
 			</HoverCardTrigger>
-			<HoverCardContent className='w-[180px]' sideOffset={10} align='end'>
+			<HoverCardContent className='w-full' sideOffset={10} align='end'>
 				<div className='flex flex-col text-muted-foreground'>
-					<p className='flex items-center justify-between'>
-						Имя: <span>Григорий</span>
-					</p>
-					<p className='flex items-center justify-between'>
-						Фамилия: <span>Унгурян</span>
-					</p>
+					<div className='flex items-center gap-3'>
+						<Avatar>
+							<AvatarImage src='https://github.com/shadcn.png' />
+							<AvatarFallback>CN</AvatarFallback>
+						</Avatar>
+						<div className='text-sm p-2'>
+							<p className='flex items-center justify-between'>
+								Григорий Унгурян
+							</p>
+							<p className='flex items-center justify-between'>Front End Dev</p>
+						</div>
+					</div>
 					<Separator className='my-2' />
 					<div className='flex items-center justify-between p-2 text-muted-foreground'>
 						<User className='w-3 h-3 hover:text-primary cursor-pointer' />
