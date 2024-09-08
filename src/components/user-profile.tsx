@@ -8,7 +8,7 @@ function UserProfile() {
 		<HoverCard>
 			<HoverCardTrigger>
 				<div className='flex items-center gap-3'>
-					<span className='text-sm text-muted-foreground'>Григорий У.</span>
+					<span className='text-sm text-muted-foreground/75'>Григорий У.</span>
 					<Avatar>
 						<AvatarImage src='https://github.com/shadcn.png' />
 						<AvatarFallback>CN</AvatarFallback>
