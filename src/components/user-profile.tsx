@@ -1,4 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { List, Settings, User } from 'lucide-react'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
 import { Separator } from './ui/separator'
 
@@ -23,7 +24,11 @@ function UserProfile() {
 						Фамилия: <span>Унгурян</span>
 					</p>
 					<Separator className='my-2' />
-					<span className='text-xs'>Id: gu9312012024</span>
+					<div className='flex items-center justify-between p-2 text-muted-foreground'>
+						<User className='w-3 h-3 hover:text-primary cursor-pointer' />
+						<List className='w-3 h-3 hover:text-primary cursor-pointer' />
+						<Settings className='w-3 h-3 hover:text-primary cursor-pointer' />
+					</div>
 				</div>
 			</HoverCardContent>
 		</HoverCard>
