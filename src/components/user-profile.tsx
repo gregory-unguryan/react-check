@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from './ui/hover-card'
+import { Separator } from './ui/separator'
 
 function UserProfile() {
 	return (
@@ -21,6 +22,8 @@ function UserProfile() {
 					<p className='flex items-center justify-between'>
 						Фамилия: <span>Унгурян</span>
 					</p>
+					<Separator className='my-2' />
+					<span className='text-xs'>Id: gu9312012024</span>
 				</div>
 			</HoverCardContent>
 		</HoverCard>
